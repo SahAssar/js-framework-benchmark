@@ -1,0 +1,21 @@
+{
+  "name": "skruv-state-v0.1.0-js-benchmark",
+  "version": "1.0.0",
+  "description": "skruv-state v0.1.0 js benchmark",
+  "main": "index.js",
+  "js-framework-benchmark": {
+    "frameworkVersionFromPackage": "skruv"
+  },
+  "scripts": {
+    "build-prod": "esbuild src/index.js --bundle --sourcemap --minify --outfile=dist/index.min.js --format=esm"
+  },
+  "dependencies": {
+    "esbuild": "^0.15.6",
+    "skruv": "0.3.1-alpha.20"
+  },
+  "keywords": [
+    "skruv"
+  ],
+  "author": "Svante Richter",
+  "license": "MIT"
+}

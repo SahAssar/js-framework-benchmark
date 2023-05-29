@@ -4,14 +4,14 @@
   "description": "skruv v0.1.0 js benchmark",
   "main": "index.js",
   "js-framework-benchmark": {
-    "frameworkVersionFromPackage": "skruv",
-    "frameworkHomeURL": "https://github.com/skruv/skruv"
+    "frameworkVersionFromPackage": "skruv"
   },
   "scripts": {
-    "build-prod": "exit 0"
+    "build-prod": "esbuild src/index.js --bundle --sourcemap --minify --outfile=dist/index.min.js --format=esm"
   },
   "dependencies": {
-    "skruv": "0.1.0"
+    "esbuild": "^0.15.6",
+    "skruv": "0.3.1-alpha.20"
   },
   "keywords": [
     "skruv"
